@@ -598,37 +598,15 @@ parcelHelpers.defineInteropFlag(exports);
 var _chartJs = require("chart.js");
 var _dayjs = require("dayjs");
 var _dayjsDefault = parcelHelpers.interopDefault(_dayjs);
+var _fetchPatientsProfile = require("./fetch-patients-profile");
+var _fetchPatientsProfileDefault = parcelHelpers.interopDefault(_fetchPatientsProfile);
+var _renderChart = require("./render-chart");
+var _renderChartDefault = parcelHelpers.interopDefault(_renderChart);
 (0, _chartJs.Chart).register((0, _chartJs.CategoryScale));
 (0, _chartJs.Chart).register((0, _chartJs.LinearScale));
 (0, _chartJs.Chart).register((0, _chartJs.LineController));
 (0, _chartJs.Chart).register((0, _chartJs.PointElement));
 (0, _chartJs.Chart).register((0, _chartJs.LineElement));
-async function fetchPatientProfile() {
-    const token = "Y29hbGl0aW9uOnNraWxscy10ZXN0";
-    return fetch("https://fedskillstest.coalitiontechnologies.workers.dev/", {
-        method: "GET",
-        headers: {
-            Authorization: `Basic ${token}`
-        }
-    }).then((res)=>{
-        if (res.ok) return res.json();
-        throw new Error("API Failed");
-    }).then((data)=>{
-        return data;
-    }).catch(()=>{
-        document.querySelectorAll(".error-state").forEach((element)=>{
-            element.style.height = "400px";
-            element.style.display = "block";
-            element.innerHTML = `
-            <div style="width: 100%; margin-top: 100px; display: flex; align-items: center; justify-content: center;">
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <img src="/warning.png" alt="Error-icon" style="width: 100px; height: 100px;">
-        <h2 style="font-weight: bold;">Some error occured!</h2>
-    </div>
-</div>`;
-        });
-    });
-}
 function getLastNMonthsData(n, datasets) {
     const month_key = {
         January: 0,
@@ -652,9 +630,10 @@ function getLastNMonthsData(n, datasets) {
     });
 }
 async function populatePatientProfile() {
-    const patientsInfo = await fetchPatientProfile();
+    const patientsInfo = await (0, _fetchPatientsProfileDefault.default)();
     const patientName = "Jessica Taylor";
     const patientInfo = patientsInfo.find((person)=>person.name === patientName);
+    // Assign patients data in patients tab
     document.getElementById("patients-list").innerHTML = `${patientsInfo.map((patient)=>{
         return `
     <div class="section">
@@ -671,6 +650,8 @@ async function populatePatientProfile() {
             />
           </div>`;
     }).join("")}`;
+    //
+    // Assign data to patient profile
     document.getElementById("patient-profile-image").src = patientInfo.profile_picture;
     document.getElementById("patient-name").innerText = patientInfo.name;
     document.getElementById("date-of-birth").innerText = (0, _dayjsDefault.default)(patientInfo.date_of_birth).format("MMMM DD, YYYY");
@@ -680,6 +661,8 @@ async function populatePatientProfile() {
     document.getElementById("patient-contact").innerText = patientInfo.phone_number;
     document.getElementById("patient-emergency-contact").innerText = patientInfo.emergency_contact;
     document.getElementById("insurance-provider").innerText = patientInfo.insurance_type;
+    //
+    // Assign data to diagnostic list
     document.getElementById("diagnostic-section-list").innerHTML = `
     ${patientInfo.diagnostic_list.map((data)=>{
         return `<div class="section">
@@ -688,6 +671,8 @@ async function populatePatientProfile() {
             <span>${data.status}</span>
         </div>`;
     }).join("")}`;
+    //
+    // Assign data to lab results
     document.getElementById("patient-lab-results-list").innerHTML = `
     ${patientInfo.lab_results.map((data)=>{
         return `<div class="section">
@@ -695,6 +680,8 @@ async function populatePatientProfile() {
         <img src="/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt="download">
     </div>`;
     }).join("")}`;
+    //
+    //Assign data to Diagnosis History
     document.getElementById("systolic-value").innerText = patientInfo.diagnosis_history[0].blood_pressure.systolic.value;
     document.getElementById("diastolic-value").innerText = patientInfo.diagnosis_history[0].blood_pressure.diastolic.value;
     document.getElementById("systolic-status").innerText = patientInfo.diagnosis_history[0].blood_pressure.systolic.levels;
@@ -738,65 +725,7 @@ async function populatePatientProfile() {
         December: 12
     };
     const filteredDiagnosisHistory = getLastNMonthsData(6, patientInfo.diagnosis_history);
-    const diagnosisChart = new (0, _chartJs.Chart)(document.getElementById("diagnosis-history-chart"), {
-        type: "line",
-        options: {
-            animation: true,
-            scales: {
-                x: {
-                    // display: true, // This will remove the x-axis labels
-                    grid: {
-                        display: false
-                    }
-                },
-                y: {
-                }
-            },
-            plugins: {
-                legend: {
-                    display: false
-                }
-            }
-        },
-        data: {
-            labels: [
-                ...filteredDiagnosisHistory.map((row)=>{
-                    const date = (0, _dayjsDefault.default)().set("year", row.year).set("month", month_key[row.month] - 1).set("date", 1);
-                    return date.valueOf();
-                }).sort().map((item)=>(0, _dayjsDefault.default)(item).format("MMM YYYY"))
-            ],
-            datasets: [
-                {
-                    // label: "Systolic",
-                    data: [
-                        ...filteredDiagnosisHistory.sort((a, b)=>{
-                            const previousDate = (0, _dayjsDefault.default)().set("year", a.year).set("month", month_key[a.month] - 1).set("date", 1);
-                            const currentDate = (0, _dayjsDefault.default)().set("year", b.year).set("month", month_key[b.month] - 1).set("date", 1);
-                            return previousDate.diff(currentDate);
-                        }).map((row)=>row.blood_pressure.systolic.value)
-                    ],
-                    borderColor: "#c26eb4",
-                    lineTension: 0.5,
-                    borderWidth: 2,
-                    pointBackgroundColor: "#c26eb4"
-                },
-                {
-                    // label: "Diastolic",
-                    data: [
-                        ...filteredDiagnosisHistory.sort((a, b)=>{
-                            const previousDate = (0, _dayjsDefault.default)().set("year", a.year).set("month", month_key[a.month] - 1).set("date", 1);
-                            const currentDate = (0, _dayjsDefault.default)().set("year", b.year).set("month", month_key[b.month] - 1).set("date", 1);
-                            return previousDate.diff(currentDate);
-                        }).map((row)=>row.blood_pressure.diastolic.value)
-                    ],
-                    borderColor: "#8c6fe6",
-                    lineTension: 0.5,
-                    borderWidth: 2,
-                    pointBackgroundColor: "#8c6fe6"
-                }
-            ]
-        }
-    });
+    const diagnosisChart = (0, _renderChartDefault.default)(filteredDiagnosisHistory);
     document.getElementById("date-range").onchange = function(event) {
         const numberOfMonths = event.target.value;
         const filteredDiagnosisHistory = getLastNMonthsData(Number(numberOfMonths), patientInfo.diagnosis_history);
@@ -842,7 +771,7 @@ async function populatePatientProfile() {
 }
 exports.default = populatePatientProfile;
 
-},{"chart.js":"ipU8D","dayjs":"NJZFB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ipU8D":[function(require,module,exports) {
+},{"chart.js":"ipU8D","dayjs":"NJZFB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./fetch-patients-profile":"jsqMq","./render-chart":"gOsFX"}],"ipU8D":[function(require,module,exports) {
 /*!
  * Chart.js v4.4.3
  * https://www.chartjs.org
@@ -14638,6 +14567,112 @@ exports.export = function(dest, destName, get) {
     }, O.en = D[g], O.Ls = D, O.p = {}, O;
 });
 
-},{}]},["l9Mez","ebWYT"], "ebWYT", "parcelRequire94c2")
+},{}],"jsqMq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+async function fetchPatientsProfile() {
+    const token = "Y29hbGl0aW9uOnNraWxscy10ZXN0";
+    return fetch("https://fedskillstest.coalitiontechnologies.workers.dev/", {
+        method: "GET",
+        headers: {
+            Authorization: `Basic ${token}`
+        }
+    }).then((res)=>{
+        if (res.ok) return res.json();
+        throw new Error("API Failed");
+    }).then((data)=>{
+        return data;
+    }).catch(()=>{
+        document.querySelectorAll(".error-state").forEach((element)=>{
+            element.style.height = "400px";
+            element.style.display = "block";
+            element.innerHTML = `
+              <div style="width: 100%; margin-top: 100px; display: flex; align-items: center; justify-content: center;">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <img src="/warning.png" alt="Error-icon" style="width: 100px; height: 100px;">
+          <h2 style="font-weight: bold;">Some error occured!</h2>
+      </div>
+  </div>`;
+        });
+    });
+}
+exports.default = fetchPatientsProfile;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gOsFX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _chartJs = require("chart.js");
+var _dayjs = require("dayjs");
+var _dayjsDefault = parcelHelpers.interopDefault(_dayjs);
+(0, _chartJs.Chart).register((0, _chartJs.CategoryScale));
+(0, _chartJs.Chart).register((0, _chartJs.LinearScale));
+(0, _chartJs.Chart).register((0, _chartJs.LineController));
+(0, _chartJs.Chart).register((0, _chartJs.PointElement));
+(0, _chartJs.Chart).register((0, _chartJs.LineElement));
+function renderChart(filteredDiagnosisHistory) {
+    const diagnosisChart = new (0, _chartJs.Chart)(document.getElementById("diagnosis-history-chart"), {
+        type: "line",
+        options: {
+            animation: true,
+            scales: {
+                x: {
+                    // display: true, // This will remove the x-axis labels
+                    grid: {
+                        display: false
+                    }
+                },
+                y: {
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        },
+        data: {
+            labels: [
+                ...filteredDiagnosisHistory.map((row)=>{
+                    const date = (0, _dayjsDefault.default)().set("year", row.year).set("month", month_key[row.month] - 1).set("date", 1);
+                    return date.valueOf();
+                }).sort().map((item)=>(0, _dayjsDefault.default)(item).format("MMM YYYY"))
+            ],
+            datasets: [
+                {
+                    // label: "Systolic",
+                    data: [
+                        ...filteredDiagnosisHistory.sort((a, b)=>{
+                            const previousDate = (0, _dayjsDefault.default)().set("year", a.year).set("month", month_key[a.month] - 1).set("date", 1);
+                            const currentDate = (0, _dayjsDefault.default)().set("year", b.year).set("month", month_key[b.month] - 1).set("date", 1);
+                            return previousDate.diff(currentDate);
+                        }).map((row)=>row.blood_pressure.systolic.value)
+                    ],
+                    borderColor: "#c26eb4",
+                    lineTension: 0.5,
+                    borderWidth: 2,
+                    pointBackgroundColor: "#c26eb4"
+                },
+                {
+                    // label: "Diastolic",
+                    data: [
+                        ...filteredDiagnosisHistory.sort((a, b)=>{
+                            const previousDate = (0, _dayjsDefault.default)().set("year", a.year).set("month", month_key[a.month] - 1).set("date", 1);
+                            const currentDate = (0, _dayjsDefault.default)().set("year", b.year).set("month", month_key[b.month] - 1).set("date", 1);
+                            return previousDate.diff(currentDate);
+                        }).map((row)=>row.blood_pressure.diastolic.value)
+                    ],
+                    borderColor: "#8c6fe6",
+                    lineTension: 0.5,
+                    borderWidth: 2,
+                    pointBackgroundColor: "#8c6fe6"
+                }
+            ]
+        }
+    });
+    return diagnosisChart;
+}
+exports.default = renderChart;
+
+},{"chart.js":"ipU8D","dayjs":"NJZFB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["l9Mez","ebWYT"], "ebWYT", "parcelRequire94c2")
 
 //# sourceMappingURL=index.739bf03c.js.map
