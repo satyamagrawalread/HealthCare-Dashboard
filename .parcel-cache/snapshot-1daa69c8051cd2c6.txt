@@ -31,7 +31,7 @@
 84E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dayjs\locale\yo.js133636213804050000 0
 127E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@parcel\workers\test\integration\workerfarm\reverse-handle.js133636164328790000 0
 101E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@parcel\runtime-js\lib\JSRuntime.js133636164340990000 0
-63E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\.gitignore133636244010620126 0
+63E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\.gitignore133636253969454355 0
 78E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\FemaleIcon.svg133635119302402439 0
 77E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\is-arrayish133636170245326482 1
 98E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\semver\internal\parse-options.js133636164306380000 0
@@ -47,12 +47,12 @@
 123E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@swc\helpers\src\_create_for_of_iterator_helper_loose.mjs133636164408720000 0
 59E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\static133636223058119322 1
 84E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dayjs\locale\it.js133636213804050000 0
-63E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\index.html133636249259216261 0
+63E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\index.html133636255672101621 0
 65E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules133636228483686921 1
 97E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dom-serializer\lib\esm\index.js133636164888330000 0
 88E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\htmlnano\.eslintignore133636164756810000 0
 77E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\BirthIcon.svg133635119218551615 0
-81E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\components\patients.html133636249260418476 0
+81E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\components\patients.html133636255676024008 0
 114E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@parcel\runtime-js\lib\helpers\node\js-loader.js133636164340990000 0
 110E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\lmdb\node_modules\node-addon-api\except.gypi133636164385030000 0
 86E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\source-map\README.md132831663231310000 0
@@ -72,7 +72,7 @@
 92E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\lightningcss\node\flags.js133636164404940000 0
 105E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\chart.js\dist\plugins\plugin.title.d.ts133636213669930000 0
 97E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\type-fest\source\utilities.d.ts132831663563200000 0
-90E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\components\diagnosis_history.html133636097758874679 0
+90E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\components\diagnosis_history.html133636255672196723 0
 84E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\js-tokens\index.js132831662778860000 0
 109E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\lmdb\node_modules\node-addon-api\napi-inl.h133636164385030000 0
 62E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\yarn.lock133636228483818344 0
@@ -157,7 +157,7 @@
 106E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\lmdb\dependencies\lz4\lib\dll\liblz4.def133636164374750000 0
 88E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\semver\ranges\valid.js133636164306380000 0
 102E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\node-addon-api\tools\clang-format.js133636164382880000 0
-84E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\components\lab_results.html133636121398505169 0
+84E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\components\lab_results.html133636255672191650 0
 82E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\json5\lib\cli.js133388548050290000 0
 88E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dayjs\esm\locale\ky.js133636213804050000 0
 59E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\js133636221726332018 1
@@ -220,8 +220,8 @@
 118E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\caniuse-lite\data\features\link-rel-modulepreload.js133636164326410000 0
 112E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\caniuse-lite\data\features\broadcastchannel.js133636164326410000 0
 101E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@babel\highlight\node_modules\chalk133636170263916954 1
-79E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\components\navbar.html133635135731404431 0
-88E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\components\patient_profile.html133636249260418476 0
+79E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\components\navbar.html133636255676034028 0
+88E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\components\patient_profile.html133636255675637192 0
 89E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@parcel\reporter-tracer133636170246662569 1
 91E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\caniuse-lite\data\regions133636170300674332 1
 109E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@parcel\transformer-svg\lib\dependencies.js133636164363320000 0
