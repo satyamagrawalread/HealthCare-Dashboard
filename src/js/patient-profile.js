@@ -10,7 +10,6 @@ Chart.register(LineElement);
 import dayjs from "dayjs";
 function fetchPatientProfile(patientName) {
   const token = process.env.TOKEN;
-  console.log(token);
   return fetch("https://fedskillstest.coalitiontechnologies.workers.dev/", {
     method: "GET",
     headers: {
