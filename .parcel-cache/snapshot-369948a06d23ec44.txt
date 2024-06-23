@@ -90,7 +90,7 @@
 74E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\css-what133636170242894843 1
 96E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\svgo\plugins\removeComments.js133636164409740000 0
 72E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\parcel133636170267199627 1
-78E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\Layer 2@2x.png133635256186529042 0
+78E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\Layer_2@2x.png133635256186529042 0
 83E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\lightningcss\node133636170282443597 1
 97E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\type-fest\ts41\pascal-case.d.ts132831663563200000 0
 80E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\lmdb\native.js133636164374750000 0
@@ -278,11 +278,11 @@
 92E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\nullthrows\nullthrows.d.ts132831663053760000 0
 98E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\css-tree\lib\syntax\node\Hash.js133636164798790000 0
 89E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@swc\helpers\_\_dispose133636170292184545 1
-75E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\Layer 2.png133635256187509223 0
+75E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\Layer_2.png133635256187509223 0
 106E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@swc\helpers\esm\_non_iterable_spread.js133636164408720000 0
 96E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\type-fest\source\asyncify.d.ts132831663563200000 0
 103E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\caniuse-lite\data\features\fileapi.js133636164326410000 0
-75E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\Layer 2.zip133635255827011585 0
+75E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\Layer_2.zip133635255827011585 0
 89E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\color-name\package.json132831662800180000 0
 122E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@parcel\runtime-react-refresh\lib\ReactRefreshRuntime.js133636164379090000 0
 103E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dayjs\esm\plugin\devHelper\index.d.ts133636213804050000 0
@@ -2577,7 +2577,7 @@
 125E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dom-serializer\node_modules\entities\lib\maps\entities.json132831663540450000 0
 84E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\css-tree\README.md133636164798790000 0
 123E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dom-serializer\node_modules\entities\lib\maps\legacy.json132831663540450000 0
-78E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\Layer 2.acc6f9f1.png133636235643443803 0
+78E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\Layer_2.acc6f9f1.png133636235643443803 0
 102E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dom-serializer\lib\foreignNames.d.ts133636164888330000 0
 94E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dayjs\plugin\arraySupport.js133636213804050000 0
 106E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dom-serializer\lib\foreignNames.d.ts.map133636164888330000 0
@@ -5218,7 +5218,7 @@
 80E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\index.f817e863.css.map133636235643604573 0
 68E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\index.html133636235644432761 0
 84E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\InsuranceIcon.eae1a4c8.svg133636235644244391 0
-81E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\Layer 2@2x.af44fe87.png133636235644254389 0
+81E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\Layer_2@2x.af44fe87.png133636235644254389 0
 107E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\more_vert_FILL0_wght300_GRAD0_opsz24.06f7e497.svg133636235643373388 0
 80E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\PhoneIcon.b0b0c2a1.svg133636235643403573 0
 86E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\respiratoryRate.007b6b25.svg133636235643393375 0

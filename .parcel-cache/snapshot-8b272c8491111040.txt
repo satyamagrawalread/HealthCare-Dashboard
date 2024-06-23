@@ -90,7 +90,7 @@
 74E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\css-what133636170242894843 1
 96E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\svgo\plugins\removeComments.js133636164409740000 0
 72E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\parcel133636170267199627 1
-78E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\Layer 2@2x.png133635256186529042 0
+78E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\Layer_2@2x.png133635256186529042 0
 83E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\lightningcss\node133636170282443597 1
 97E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\type-fest\ts41\pascal-case.d.ts132831663563200000 0
 80E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\lmdb\native.js133636164374750000 0
@@ -279,11 +279,11 @@
 92E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\nullthrows\nullthrows.d.ts132831663053760000 0
 98E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\css-tree\lib\syntax\node\Hash.js133636164798790000 0
 89E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@swc\helpers\_\_dispose133636170292184545 1
-75E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\Layer 2.png133635256187509223 0
+75E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\Layer_2.png133635256187509223 0
 106E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@swc\helpers\esm\_non_iterable_spread.js133636164408720000 0
 96E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\type-fest\source\asyncify.d.ts132831663563200000 0
 103E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\caniuse-lite\data\features\fileapi.js133636164326410000 0
-75E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\Layer 2.zip133635255827011585 0
+75E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\src\assets\Layer_2.zip133635255827011585 0
 89E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\color-name\package.json132831662800180000 0
 122E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\@parcel\runtime-react-refresh\lib\ReactRefreshRuntime.js133636164379090000 0
 103E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dayjs\esm\plugin\devHelper\index.d.ts133636213804050000 0
@@ -2583,7 +2583,7 @@
 125E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dom-serializer\node_modules\entities\lib\maps\entities.json132831663540450000 0
 84E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\css-tree\README.md133636164798790000 0
 123E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dom-serializer\node_modules\entities\lib\maps\legacy.json132831663540450000 0
-78E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\Layer 2.acc6f9f1.png133636241019707036 0
+78E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\Layer_2.acc6f9f1.png133636241019707036 0
 102E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dom-serializer\lib\foreignNames.d.ts133636164888330000 0
 94E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dayjs\plugin\arraySupport.js133636213804050000 0
 106E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\node_modules\dom-serializer\lib\foreignNames.d.ts.map133636164888330000 0
@@ -5233,13 +5233,13 @@
 76E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\index.f10b1a64.css133636236460909620 0
 80E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\index.f10b1a64.css.map133636236461399562 0
 84E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\InsuranceIcon.7d9b37c8.svg133636236447119389 0
-78E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\Layer 2.a4dc797f.png133636236434854241 0
-81E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\Layer 2@2x.d17dc50a.png133636236444196989 0
+78E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\Layer_2.a4dc797f.png133636236434854241 0
+81E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\Layer_2@2x.d17dc50a.png133636236444196989 0
 108E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\more_horiz_FILL0_wght300_GRAD0_opsz24.000ed5ee.svg133636236447099159 0
 107E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\more_vert_FILL0_wght300_GRAD0_opsz24.89bdbcd3.svg133636236436958534 0
 104E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\search_FILL0_wght300_GRAD0_opsz24.2b62703c.svg133636236447099159 0
 69E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\warning.png133636123227749669 0
-81E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\Layer 2@2x.af44fe87.png133636241022882849 0
+81E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\Layer_2@2x.af44fe87.png133636241022882849 0
 103E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\group_FILL0_wght300_GRAD0_opsz24.9ab324ab.svg133636241025391776 0
 109E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\chat_bubble_FILL0_wght300_GRAD0_opsz24.b1c24485.svg133636241025391776 0
 107E:\Desktop\CODING\frontend-file\HealthCare-Dashboard\dist\more_vert_FILL0_wght300_GRAD0_opsz24.06f7e497.svg133636241025391776 0
