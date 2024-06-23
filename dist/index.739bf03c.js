@@ -14610,6 +14610,20 @@ var _dayjsDefault = parcelHelpers.interopDefault(_dayjs);
 (0, _chartJs.Chart).register((0, _chartJs.PointElement));
 (0, _chartJs.Chart).register((0, _chartJs.LineElement));
 function renderChart(filteredDiagnosisHistory) {
+    const month_key = {
+        January: 1,
+        February: 2,
+        March: 3,
+        April: 4,
+        May: 5,
+        June: 6,
+        July: 7,
+        August: 8,
+        September: 9,
+        October: 10,
+        November: 11,
+        December: 12
+    };
     const diagnosisChart = new (0, _chartJs.Chart)(document.getElementById("diagnosis-history-chart"), {
         type: "line",
         options: {
