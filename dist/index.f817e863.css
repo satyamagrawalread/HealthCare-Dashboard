@@ -1,0 +1,31 @@
+#lab-results .heading {
+  color: #072635;
+  margin-bottom: 20px;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#lab-results .section-list {
+  overflow-y: auto;
+}
+
+#lab-results .section {
+  color: #072635;
+  justify-content: space-between;
+  align-items: center;
+  height: 15px;
+  padding: 10px;
+  font-family: Manrope;
+  font-size: 12px;
+  display: flex;
+}
+
+#lab-results .section:hover {
+  background-color: #f6f7f8;
+}
+
+#lab-results .section img {
+  height: 15px;
+}
+/*# sourceMappingURL=index.f817e863.css.map */

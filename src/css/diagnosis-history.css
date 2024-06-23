@@ -1,0 +1,109 @@
+#diagnosis-history .heading {
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 800;
+    color: #072635;
+    margin-bottom: 30px;
+}
+
+#diagnosis-history .chart {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    column-gap: 20px;
+    background-color: #f4f0fe;
+    height: 52%;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.chart .leftview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chart .top-leftview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart .rightview .label {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+.chart .rightview #label-systolic .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #e66fd2;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+.chart .rightview #label-diastolic .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #8c6fe6;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+.chart .rightview .value {
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: bold;
+    color: #072635;
+    padding-top: 10px;
+}
+.chart .rightview .status {
+    display: flex;
+    gap: 5px;
+    padding: 10px 0;
+    font-family: 'Manrope';
+    font-size: 14px;
+    color: #072635;
+}
+.chart .rightview .label .type {
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 800;
+    color: #072635;
+}
+.chart .rightview .divider {
+    width: 100%;
+    height: 0.5px;
+    background-color: #cbc8d4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#diagnosis-history .display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 35%;
+    column-gap: 12px;
+}
+
+#diagnosis-history .display-container {
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#respiratory-rate, #temperature, #heart-rate {
+    
+}
+
+#respiratory-rate {
+    background-color: #e0f3fa;
+}
+
+#temperature {
+    background-color: #ffe6e9;
+}
+
+#heart-rate {
+    background-color: #ffe6f1;
+}
+
+.display-container .circle img {
+    width: 80px;
+}

@@ -1,0 +1,62 @@
+#patients {
+  background-color: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.patients-topview {
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  display: flex;
+  position: relative;
+}
+
+.patients-topview .heading {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.patients-mainview {
+  overflow-y: auto;
+}
+
+#patients .section {
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  display: flex;
+}
+
+.section .patient-data {
+  align-items: center;
+  gap: 5px;
+  display: flex;
+}
+
+.patient-data img {
+  width: 25px;
+  height: 25px;
+}
+
+.patient-data .details {
+  flex-direction: column;
+  display: flex;
+}
+
+.patient-data .details .name {
+  font-family: Manrope;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.patient-data .details .age {
+  color: #707070;
+  font-family: Manrope;
+  font-size: 9px;
+}
+/*# sourceMappingURL=index.984d966f.css.map */

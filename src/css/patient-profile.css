@@ -1,0 +1,63 @@
+#patient-profile .top-rightview {
+    text-align: center;
+}
+
+#patient-profile .top-rightview > img {
+    width: 120px;
+}
+
+#patient-profile .top-rightview .name {
+    margin: 16px;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 800;
+    color: #072635;
+}
+
+.main-rightview .section {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+
+.main-rightview .section img {
+    width: 25px;
+    padding-right: 10px;
+}
+
+.main-rightview .section .personal-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personal-data .type {
+    font-family: 'Manrope';
+    font-size: 8px;
+    /* font-weight: 800; */
+    color: #072635;
+}
+
+.personal-data .value {
+    font-family: 'Manrope';
+    font-size: 8px;
+    font-weight: 800;
+    color: #072635;
+}
+
+#patient-profile .info-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+#patient-profile .info-btn button {
+    height: 30px;
+    width: 120px;
+    font-family: 'Manrope';
+    font-size: 10px;
+    font-weight: 800;
+    border-radius: 20px;
+    background-color: #01f0d0;
+    border: none;
+}

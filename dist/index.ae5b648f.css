@@ -1,0 +1,43 @@
+#diagnostic-list .heading {
+  color: #072635;
+  margin-bottom: 20px;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#diagnostic-list .section-list {
+  overflow-y: auto;
+}
+
+#diagnostic-list .table-heading, .section {
+  grid-template-columns: 1fr 2fr .8fr;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+#diagnostic-list .table-heading {
+  color: #072635;
+  background-color: #f6f7f8;
+  border-radius: 24px;
+  height: 15px;
+  padding: 10px;
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#diagnostic-list .section {
+  color: #072635;
+  height: 15px;
+  padding: 10px;
+  font-family: Manrope;
+  font-size: 12px;
+}
+
+#diagnostic-list .loading {
+  justify-content: center;
+  display: flex;
+}
+/*# sourceMappingURL=index.ae5b648f.css.map */

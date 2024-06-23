@@ -1,0 +1,41 @@
+#diagnostic-list .heading {
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 800;
+    color: #072635;
+    margin-bottom: 20px;
+}
+#diagnostic-list .section-list {
+    overflow-y: auto;
+}
+#diagnostic-list .table-heading, .section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.8fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#diagnostic-list .table-heading {
+    font-family: 'Manrope';
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 24px;
+    background-color: #f6f7f8;
+    padding: 10px;
+    height: 15px;
+    color: #072635;
+}
+
+#diagnostic-list .section {
+    font-family: 'Manrope';
+    font-size: 12px;
+    padding: 10px;
+    height: 15px;
+    color: #072635;
+}
+
+#diagnostic-list .loading {
+    display: flex;
+    justify-content: center;
+    
+}
