@@ -28,8 +28,12 @@
 #patients .section {
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  padding: 20px;
   display: flex;
+}
+
+#patients .section:hover {
+  background-color: #d8fcf7;
 }
 
 .section .patient-data {

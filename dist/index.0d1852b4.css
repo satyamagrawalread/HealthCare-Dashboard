@@ -16,12 +16,12 @@
 
 .main-rightview .section {
   justify-content: left;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   display: flex;
 }
 
 .main-rightview .section img {
-  width: 25px;
+  width: 30px;
   padding-right: 10px;
 }
 
@@ -34,20 +34,20 @@
 .personal-data .type {
   color: #072635;
   font-family: Manrope;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .personal-data .value {
   color: #072635;
   font-family: Manrope;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 800;
 }
 
 #patient-profile .info-btn {
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
 }
 

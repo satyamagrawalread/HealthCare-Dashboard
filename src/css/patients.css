@@ -27,7 +27,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    padding: 20px;
+}
+
+#patients .section:hover {
+    background-color: #d8fcf7;
 }
 
 .section .patient-data {

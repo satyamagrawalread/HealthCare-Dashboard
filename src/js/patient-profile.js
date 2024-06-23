@@ -1,4 +1,5 @@
 import { Chart, CategoryScale, LinearScale, LineController, PointElement, LineElement } from "chart.js";
+import dayjs from "dayjs";
 
 Chart.register(CategoryScale);
 Chart.register(LinearScale);
@@ -7,8 +8,7 @@ Chart.register(PointElement);
 Chart.register(LineElement);
 
 
-import dayjs from "dayjs";
-function fetchPatientProfile(patientName) {
+async function fetchPatientProfile() {
   const token = process.env.TOKEN;
   return fetch("https://fedskillstest.coalitiontechnologies.workers.dev/", {
     method: "GET",
@@ -23,7 +23,7 @@ function fetchPatientProfile(patientName) {
       throw new Error("API Failed");
     })
     .then((data) => {
-      return data.find((person) => person.name === patientName);
+      return data;
     })
     .catch(() => {
       document.querySelectorAll(".error-state").forEach((element) => {
@@ -66,7 +66,25 @@ function getLastNMonthsData(n, datasets) {
 }
 
 async function populatePatientProfile() {
-  const patientInfo = await fetchPatientProfile("Jessica Taylor");
+  const patientsInfo = await fetchPatientProfile();
+  const patientName = "Jessica Taylor";
+  const patientInfo = patientsInfo.find((person) => person.name === patientName);
+  document.getElementById('patients-list').innerHTML = `${patientsInfo.map((patient) => {
+    return `
+    <div class="section">
+            <div class="patient-data">
+              <img src="${patient.profile_picture}" />
+              <div class="details">
+                <span class="name">${patient.name}</span>
+                <span class="age">${patient.gender}, ${patient.age}</span>
+              </div>
+            </div>
+            <img
+              src="/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"
+              alt="dots"
+            />
+          </div>`
+  }).join('')}`
   document.getElementById("patient-profile-image").src =
     patientInfo.profile_picture;
   document.getElementById("patient-name").innerText = patientInfo.name;
@@ -121,13 +139,13 @@ async function populatePatientProfile() {
     "Higher than Average"
   ) {
     document.getElementById("systolic-status-icon").src =
-      "src\\assets\\ArrowUp.svg";
+      "/ArrowUp.svg";
   } else if (
     patientInfo.diagnosis_history[0].blood_pressure.systolic.levels ===
     "Lower than Average"
   ) {
     document.getElementById("systolic-status-icon").src =
-      "src\\assets\\ArrowDown.svg";
+      "/ArrowDown.svg";
   }
 
   if (
@@ -135,13 +153,13 @@ async function populatePatientProfile() {
     "Higher than Average"
   ) {
     document.getElementById("diastolic-status-icon").src =
-      "src\\assets\\ArrowUp.svg";
+      "/ArrowUp.svg";
   } else if (
     patientInfo.diagnosis_history[0].blood_pressure.diastolic.levels ===
     "Lower than Average"
   ) {
     document.getElementById("diastolic-status-icon").src =
-      "src\\assets\\ArrowDown.svg";
+      "/ArrowDown.svg";
   }
 
   // Assigns value and status for respiratory rate
@@ -154,15 +172,13 @@ async function populatePatientProfile() {
     "Higher than Average"
   ) {
     document.getElementById("respiratory-rate-status-icon").src =
-      "src\\assets\\ArrowUp.svg";
+      "/ArrowUp.svg";
   } else if (
     patientInfo.diagnosis_history[0].respiratory_rate.levels ===
     "Lower than Average"
   ) {
     document.getElementById("respiratory-rate-status-icon").src =
-      "src\\assets\\ArrowDown.svg";
-  } else {
-    document.getElementById("respiratory-rate-status-icon").src = "/";
+      "/ArrowDown.svg";
   }
   //
   // Assigns value and status for temperature
@@ -175,12 +191,12 @@ async function populatePatientProfile() {
     "Higher than Average"
   ) {
     document.getElementById("temperature-status-icon").src =
-      "src\\assets\\ArrowUp.svg";
+      "/ArrowUp.svg";
   } else if (
     patientInfo.diagnosis_history[0].temperature.levels === "Lower than Average"
   ) {
     document.getElementById("temperature-status-icon").src =
-      "src\\assets\\ArrowDown.svg";
+      "/ArrowDown.svg";
   }
   //
   // Assigns value and status for heart rate
@@ -192,12 +208,12 @@ async function populatePatientProfile() {
     patientInfo.diagnosis_history[0].heart_rate.levels === "Higher than Average"
   ) {
     document.getElementById("heart-rate-status-icon").src =
-      "src\\assets\\ArrowUp.svg";
+      "/ArrowUp.svg";
   } else if (
     patientInfo.diagnosis_history[0].heart_rate.levels === "Lower than Average"
   ) {
     document.getElementById("heart-rate-status-icon").src =
-      "src\\assets\\ArrowDown.svg";
+      "/ArrowDown.svg";
   }
   //
   const month_key = {

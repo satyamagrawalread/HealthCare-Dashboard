@@ -11,7 +11,7 @@
     grid-template-columns: 2.2fr 1fr;
     column-gap: 20px;
     background-color: #f4f0fe;
-    height: 52%;
+    height: 45%;
     border-radius: 12px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -106,4 +106,12 @@
 
 .display-container .circle img {
     width: 80px;
+}
+
+.display .value {
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 900;
+    color: #072635;
+    padding-bottom: 15px;
 }
